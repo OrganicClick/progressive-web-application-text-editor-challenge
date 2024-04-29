@@ -78,19 +78,23 @@ Please click the following link to view a video walkthrough of how to use the ap
 
 
 ## Technologies Used
-MongoDB
+HTML
 
-Mongoose ODM
-
-Dotenv package
+CSS
 
 JavaScript
 
+Service Worker with Workbox
+
+Babel
+
 Git/GitHub
 
-Insomnia
+Manifest.json
 
-Express.js
+Webpack
+
+IndexedDB
 
 ## Credits
 Development was assisted by the following resources:
