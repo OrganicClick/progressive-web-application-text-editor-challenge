@@ -15,7 +15,7 @@ This repo will serve to satisfy the requirements for the GWU Coding Boot Camp Mo
 - [Contact](#contact)
 
 ## Description
-
+This challenge involves creating a Progressive Web Application (PWA) for a text editor. The application's intent is to provide users with a responsive and offline-capable text editing experience. It should utilize IndexedDB for storing data, work offline, automatically save content, be bundled with webpack, include a service worker with workbox for caching static assets, use babel for async/await functionality, and have a generated manifest.json for PWA installation.
 
 ## User Story
 
@@ -94,7 +94,7 @@ Express.js
 
 ## Credits
 Development was assisted by the following resources:
- - Xpert Learning Assistant provided by the GWU Coding Boot Camp. Provided general guidance and assistance with Installation
+ - Xpert Learning Assistant provided by the GWU Coding Boot Camp. Provided general guidance and assistance with Installation and concise description of application.
 
 
 ## Contact
