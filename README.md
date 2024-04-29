@@ -9,7 +9,6 @@ This repo will serve to satisfy the requirements for the GWU Coding Boot Camp Mo
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
-- [Link to Video Walkthrough](#link-to-video-walkthrough)
 - [Technologies Used](#technologies-used)
 - [Credits](#credits)
 - [Contact](#contact)
@@ -68,13 +67,6 @@ If you have suggestions or contributions to add, please follow the guidelines li
 
 ## License
 This challenge is provided under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-
-## Link to Video Walkthrough
-
-Please click the following link to view a video walkthrough of how to use the application:
-
-[Link to Video Walkthrough] 
 
 
 ## Technologies Used
