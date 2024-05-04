@@ -92,6 +92,9 @@ IndexedDB
 Development was assisted by the following resources:
  - Xpert Learning Assistant provided by the GWU Coding Boot Camp. Provided general guidance and assistance with Installation and concise description of application.
  - Referenced the Activities in the GWU Coding Boot Camp class materials for Webpack configuration (https://git.bootcampcontent.com/George-Washington-University/GWU-VIRT-FSF-PT-11-2023-U-LOLC/-/tree/main/19-PWA/01-Activities?ref_type=heads)
+ - Html-webpack-plugin documentation and installation (https://www.npmjs.com/package/html-webpack-plugin)
+ - Webpack-pwa-manifest documentation and installation (https://www.npmjs.com/package/webpack-pwa-manifest)
+ - Workbox-webpack-plugin documentation and installation (https://www.npmjs.com/package/workbox-webpack-plugin)
 
 
 ## Contact
