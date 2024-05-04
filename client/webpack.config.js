@@ -26,15 +26,20 @@ module.exports = () => {
         chunks: ['install'],
       }),
       new WebpackPwaManifest({
-        name: 'Your App Name',
+        name: 'Progressive-Web-Application-Text-Editor',
         short_name: 'App',
-        description: 'Your app description',
+        description: 'PWA Text Editor',
         background_color: '#ffffff',
         theme_color: '#31a9e1',
         icons: [
           {
-            src: path.resolve('src/assets/icon.png'),
+            src: path.resolve('src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join('assets', 'icons'),
+          },
+          {
+            src: path.resolve('favicon.ico'),
+            sizes: [16, 32, 64],
             destination: path.join('assets', 'icons'),
           },
         ],
