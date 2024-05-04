@@ -95,7 +95,9 @@ Development was assisted by the following resources:
  - Html-webpack-plugin documentation and installation (https://www.npmjs.com/package/html-webpack-plugin)
  - Webpack-pwa-manifest documentation and installation (https://www.npmjs.com/package/webpack-pwa-manifest)
  - Workbox-webpack-plugin documentation and installation (https://www.npmjs.com/package/workbox-webpack-plugin)
-
+ - @babel/present-env documentation and installation (https://www.npmjs.com/package/@babel/preset-env)
+ - style-loader documentation and installation (https://www.npmjs.com/package/@babel/preset-env)
+ - css-loader documentation and installation (https://www.npmjs.com/package/css-loader)
 
 ## Contact
 To contact the owner of this repo, OrganicClick, please reach out via OrganicClick@exampleemail.com
