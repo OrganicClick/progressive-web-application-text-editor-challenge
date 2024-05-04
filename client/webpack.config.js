@@ -16,14 +16,9 @@ module.exports = () => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: './src/index.html',
+        template: './client/index.html',
         filename: 'index.html',
         chunks: ['main'],
-      }),
-      new HtmlWebpackPlugin({
-        template: './src/install.html',
-        filename: 'install.html',
-        chunks: ['install'],
       }),
       new WebpackPwaManifest({
         name: 'Progressive-Web-Application-Text-Editor',
@@ -45,9 +40,9 @@ module.exports = () => {
         ],
       }),
       new InjectManifest({
-        swSrc: './src/service-worker.js',
-        swDest: 'service-worker.js',
-      }),
+        swSrc: './client/src-sw.js', // Path to service worker file
+        swDest: 'src-sw.js', // Destination where the injected service worker will be placed
+      }),      
     ],
 
     module: {
