@@ -40,7 +40,7 @@ module.exports = () => {
         ],
       }),
       new InjectManifest({
-        swSrc: './client/src-sw.js', // Path to service worker file
+        swSrc: './src-sw.js', // Relative path to service worker file within client directory
         swDest: 'src-sw.js', // Destination where the injected service worker will be placed
       }),      
     ],
