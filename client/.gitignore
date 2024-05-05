@@ -67,3 +67,6 @@ yarn.lock
 .DS_Store
 .vscode
 *.xslx
+
+# Output folder generated during build process
+dist/
