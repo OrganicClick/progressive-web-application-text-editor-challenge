@@ -1,3 +1,5 @@
+// webpack.config.js
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
@@ -7,18 +9,25 @@ module.exports = () => {
   return {
     mode: 'development',
     entry: {
-      main: './src/js/index.js',
-      install: './src/js/install.js'
+      main: './client/src/js/index.js',
+      install: './client/src/js/install.js'
     },
     output: {
       filename: '[name].bundle.js',
-      path: path.resolve(__dirname, 'dist'),
+      path: path.resolve(__dirname, 'client', 'dist'),
     },
     plugins: [
+      // Generate client/index.html in the dist folder
       new HtmlWebpackPlugin({
-        template: './index.html',
+        template: './client/index.html',
         filename: 'index.html',
         chunks: ['main'],
+      }),
+      // Generate client/dist/install.html in the dist folder
+      new HtmlWebpackPlugin({
+        template: './client/dist/index.html', // Update the template path
+        filename: 'install.html',
+        chunks: ['install'],
       }),
       new WebpackPwaManifest({
         name: 'Progressive-Web-Application-Text-Editor',
@@ -28,20 +37,20 @@ module.exports = () => {
         theme_color: '#31a9e1',
         icons: [
           {
-            src: path.resolve('src/images/logo.png'),
+            src: 'client/src/images/logo.png', // Updated path
             sizes: [96, 128, 192, 256, 384, 512],
             destination: path.join('assets', 'icons'),
           },
           {
-            src: path.resolve('favicon.ico'),
+            src: './favicon.ico',
             sizes: [16, 32, 64],
             destination: path.join('assets', 'icons'),
           },
-        ],
+        ],        
       }),
       new InjectManifest({
-        swSrc: './src-sw.js', // Relative path to service worker file within client directory
-        swDest: 'src-sw.js', // Destination where the injected service worker will be placed
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js',
       }),      
     ],
 
