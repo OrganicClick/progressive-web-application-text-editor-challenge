@@ -100,6 +100,6 @@ Development was assisted by the following resources:
  - css-loader documentation and installation (https://www.npmjs.com/package/css-loader)
  - Documentation reference for implementation of IndexedDB in this application (https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)
  - Class material referenced for implementation of IndexedDB in this application (https://git.bootcampcontent.com/George-Washington-University/GWU-VIRT-FSF-PT-11-2023-U-LOLC/-/tree/main/19-PWA/01-Activities/24-Stu_IndexedDB-CRUD?ref_type=heads)
-
+ - Documentation referenced for PWA Service Workers (https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Offline_Service_workers)
 ## Contact
 To contact the owner of this repo, OrganicClick, please reach out via OrganicClick@exampleemail.com

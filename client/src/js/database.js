@@ -12,32 +12,27 @@ const initdb = async () =>
     },
   });
 
+// Method to add content to the database
 export const putDb = async (content) => {
-  try {
-    const db = await initdb();
-    const tx = db.transaction('jate', 'readwrite');
-    const store = tx.objectStore('jate');
-    const result = await store.add(content);
-    console.log('Data saved to the database:', result);
-    return result;
-  } catch (error) {
-    console.error('Error putting data into database:', error);
-    throw error;
-  }
+  console.log('PUT to the database');
+  const db = await openDB('jate', 1);
+  const tx = db.transaction('jate', 'readwrite');
+  const store = tx.objectStore('jate');
+  const request = store.put({ jate: content });
+  const result = await request;
+  console.log('Data saved to the database', result);
 };
 
+// Method to retrieve all content from the database
 export const getDb = async () => {
-  try {
-    const db = await initdb();
-    const tx = db.transaction('jate', 'readonly');
-    const store = tx.objectStore('jate');
-    const result = await store.getAll();
-    console.log('All data retrieved from database:', result);
-    return result;
-  } catch (error) {
-    console.error('Error getting data from database:', error);
-    throw error;
-  }
+  console.log('GET all from the database');
+  const db = await openDB('jate', 1);
+  const tx = db.transaction('jate', 'readonly');
+  const store = tx.objectStore('jate');
+  const request = store.getAll();
+  const result = await request;
+  console.log('All data retrieved from database', result);
+  return result;
 };
 
 initdb();
