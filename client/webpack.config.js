@@ -35,6 +35,8 @@ module.exports = () => {
         description: 'PWA Text Editor',
         background_color: '#ffffff',
         theme_color: '#31a9e1',
+        start_url: '/', // Specify the start URL of your application
+        publicPath: 'client/src/images/logo.png', // Specify the public path of your assets
         icons: [
           {
             src: 'client/src/images/logo.png', // Updated path

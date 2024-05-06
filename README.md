@@ -8,6 +8,7 @@ This repo will serve to satisfy the requirements for the GWU Coding Boot Camp Mo
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
+- [Screenshot](#screenshot)
 - [License](#license)
 - [Technologies Used](#technologies-used)
 - [Credits](#credits)
@@ -52,10 +53,28 @@ THEN I should have proper build scripts for a webpack application
 
 ## Installation
 
+To install and run this application locally, follow these steps:
+
+1. Clone this repository to your local machine using the following command:
+   - git clone https://github.com/your-username/progressive-web-application-text-editor-challenge.git
+
+2. Navigate to the root directory of the project:
+    -  cd progressive-web-application-text-editor-challenge
+
+3. Install the project dependencies by running the following command:
+   - npm install
 
 
 ## Usage
+1. Start the server and client simultaneously:
+- npm run start
 
+2. Open the application in your browser:
+- http://localhost:3000/
+
+3. Use the text editor to create, edit, and save notes or code snippets. Your content will be automatically saved using IndexedDB, allowing you to retrieve it later.
+
+4. Click on the "Install" button to download the web application as an icon on your desktop. This will enable you to access the text editor offline and install it as a progressive web app (PWA).
 
 ## Contributing
 If you have suggestions or contributions to add, please follow the guidelines listed below. Pull requests will be reviewed in the order that they are received.
@@ -64,6 +83,10 @@ If you have suggestions or contributions to add, please follow the guidelines li
 - Make your changes and commit them.
 - Push to the branch.
 - Create a new Pull Request.
+
+## Screenshot
+Please see a linked screenshot of the application in action:
+[!Screenshot of application](client/src/images/Module-19-Assignment-Screenshot.png)
 
 ## License
 This challenge is provided under the MIT License. See the [LICENSE](LICENSE) file for details.
